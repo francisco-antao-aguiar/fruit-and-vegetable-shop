@@ -6,7 +6,7 @@ create table PRODUCT(
 
 create table PRODUCT_ORDER(
   ID int not null AUTO_INCREMENT,
-  DATE date not null,
+  DATE TIMESTAMP WITH TIME ZONE  not null,
   USERNAME varchar(20) not null,
   AMOUNT int not null,
   PRODUCT varchar(100) not null,
